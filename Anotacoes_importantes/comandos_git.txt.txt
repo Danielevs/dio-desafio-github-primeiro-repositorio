@@ -1,0 +1,46 @@
+Github 
+
+remover versionamento: rm -rf .git (deixa de ser repositorio git)
+
+git restore NOME DO ARQUIVO, descarta as mudanças e restaura o arquivo anterior
+
+alterar mensagem do ultimo commit: git commit --amend -m"nova mensagem" ou
+
+git commit --amend (vai abrir o editor da mensagem)
+
+desfazer o ultimo commit : git reset --soft cola o hash do commit
+git reset --mixed (padrão do reset) hash do ultimo de commit (os arquivos voltam para area de preparação)
+
+git reset --hard hash (ignora os arquivos do commit anterior e desfaz eles (apaga))
+
+Historico de commut detalhado: git reflog
+
+mkdir pasta - cria nova pasta
+
+push(envia alterações do repositório local para remoto) git push -u origin main
+
+git puul (mescla alterações do repositorio remoto com o local)
+
+trocar para uma nova branch
+git checkout -b nome da branch
+
+git commit -v : mostra o ultimo commit de cada branch
+
+git branch -d nomeda branch: exclui uma branch
+
+para evitar conflito de branch 
+git fetch origin main 
+
+para trazer do remoto para o local sem mesclar
+git merge origin/main
+
+clonar apenas uma branch quando o repositorio tem mais de uma
+git clone url --branch nome da branch --single-branch
+
+arquivar modificação
+git stash
+git stash pop ou git stash applay deixa o arquivo disponivel
+
+retornar para uma branch
+git checkout nome da branch
+
